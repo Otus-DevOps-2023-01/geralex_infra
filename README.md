@@ -32,3 +32,9 @@ Host someinternalhost
 Выполнить команду из локального терминала:
 
 ssh someinternalhost
+
+
+
+Адреса после перезапуска ВМ:
+bastion_IP = 51.250.94.110
+someinternalhost_IP = 10.128.0.16
