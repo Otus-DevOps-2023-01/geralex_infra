@@ -3,8 +3,8 @@ geralex Infra repository
 
 Способ подключения в одну строку с локального терминала:
 
-Способ первый: ssh -o ProxyCommand="ssh -W 10.128.0.16:22 62.84.127.205" someinternalhost
-Способ второй: ssh -J geralex@62.84.127.205:22 10.128.0.16
+Способ первый: ssh -o ProxyCommand="ssh -W 10.128.0.16:22 84.201.129.240" someinternalhost
+Способ второй: ssh -J geralex@84.201.129.240:22 10.128.0.16
 
 Дополнительное задание:
 
@@ -16,7 +16,7 @@ nano config
 Добавить следующие строки:
 
 Host bastion
-  HostName 62.84.127.205
+  HostName 84.201.129.240
   User geralex
   IdentityFile ~/.ssh/geralex
 
@@ -28,12 +28,10 @@ Host someinternalhost
 
 ssh someinternalhost
 
-
-
-Адреса ВМ:
-bastion_IP = 51.250.94.110
+Адреса виртуальных машин:
+bastion_IP = 84.201.129.240
 someinternalhost_IP = 10.128.0.16
 
 Дополнительное задание:
 
-URL: https://51-250-94-110.sslip.io
+URL: https://84.201.129.240.sslip.io/
