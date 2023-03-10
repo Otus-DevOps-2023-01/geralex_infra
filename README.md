@@ -1,6 +1,7 @@
 # geralex_infra
 geralex Infra repository
 
+
 ## Способ подключения в одну строку с локального терминала:
 
 Способ первый: ssh -o ProxyCommand="ssh -W 10.128.0.16:22 84.201.129.240" someinternalhost
@@ -35,3 +36,7 @@ someinternalhost_IP = 10.128.0.16
 
 Дополнительное задание:
 URL: https://84.201.129.240.sslip.io/
+
+
+testapp_IP = 158.160.44.236
+testapp_port = 9292
