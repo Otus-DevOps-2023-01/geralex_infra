@@ -30,3 +30,17 @@ variable "count_instance" {
   description = "count instance"
   default     = 1
 }
+variable "app_disk_image" {
+  description = "Disk image for reddit app"
+  default     = "reddit-app-base"
+}
+variable "db_disk_image" {
+  description = "Disk image for reddit db"
+  default     = "reddit-db-base"
+}
+variable "access_key" {
+  description = "Access key storage backend"
+}
+variable "secret_key" {
+  description = "Secret key storage backend"
+}
