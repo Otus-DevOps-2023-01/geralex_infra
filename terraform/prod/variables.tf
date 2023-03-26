@@ -44,3 +44,9 @@ variable "access_key" {
 variable "secret_key" {
   description = "Secret key storage backend"
 }
+variable "database_url" {
+  description = "MongoDB URL"
+}
+#variable "is_install_service" {
+#  description = ""
+#}
