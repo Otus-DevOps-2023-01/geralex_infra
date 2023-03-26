@@ -1,12 +1,12 @@
 terraform {
-#  required_providers {
-#    yandex = {
-#      source = "yandex-cloud/yandex"
-#    }
-#    required_version = ">= 0.13"
-#  }
+  #  required_providers {
+  #    yandex = {
+  #      source = "yandex-cloud/yandex"
+  #    }
+  #    required_version = ">= 0.13"
+  #  }
 
-    backend "s3" {
+  backend "s3" {
     endpoint   = "storage.yandexcloud.net"
     bucket     = "terraform-2-otus-demo-storage-bucket"
     region     = "ru-central1-a"
