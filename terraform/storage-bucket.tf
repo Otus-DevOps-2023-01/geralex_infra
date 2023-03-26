@@ -1,25 +1,3 @@
-#terraform {
-#  required_providers {
-#    yandex = {
-#      source  = "yandex-cloud/yandex"
-#      version = "0.87.0"
-#    }
-#  }
-
-#  backend "s3" {
-#    endpoint   = "storage.yandexcloud.net"
-#    bucket     = "terraform-2-otus-demo-storage-bucket"
-#    region     = "ru-central1-a"
-#    key        = "terraform/state/terraform.tfstate"
-#    access_key = yandex_iam_service_account_static_access_key.sa-static-key.access_key
-#    secret_key = yandex_iam_service_account_static_access_key.sa-static-key.secret_key
-
-#    skip_region_validation      = true
-#    skip_credentials_validation = true
-#  }
-
-#}
-
 #locals {
 #  folder_id = "b1g3l9isrnq8ofkdnu9b"
 #}
@@ -53,8 +31,8 @@
 //Create storage backend
 resource "yandex_storage_bucket" "state" {
   bucket     = "terraform-2-otus-demo-storage-bucket"
-  access_key = var.access_key
-  secret_key = var.secret_key
+  access_key = ""
+  secret_key = ""
 }
 
 #data "terraform_remote_state" "vpc" {
