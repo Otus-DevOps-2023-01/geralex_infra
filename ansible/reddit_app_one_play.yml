@@ -37,10 +37,10 @@
       tags: deploy-tag
       notify: reload puma
     - name: Bundle install
-    bundler:
+      bundler:
       state: present
       chdir: /home/appuser/reddit  # <-- В какой директории выполнить команду bundle
-    tags: deploy-tag
+      tags: deploy-tag
 
   handlers:  # <-- Добавим блок handlers и задачу
   - name: restart mongod
